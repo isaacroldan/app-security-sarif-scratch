@@ -1,0 +1,187 @@
+{
+  "step": "unresolved-failed",
+  "commit": "4fa384c8088f5601c5891891f9e48c9b907b7619",
+  "sarif": {
+    "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+    "version": "2.1.0",
+    "runs": [
+      {
+        "tool": {
+          "driver": {
+            "name": "Shopify app security check",
+            "semanticVersion": "3.0.0",
+            "rules": [
+              {
+                "id": "CREDENTIAL_LOG_LEAKAGE",
+                "shortDescription": {
+                  "text": "CREDENTIAL_LOG_LEAKAGE"
+                },
+                "fullDescription": {
+                  "text": "CREDENTIAL_LOG_LEAKAGE description"
+                },
+                "help": {
+                  "text": "CREDENTIAL_LOG_LEAKAGE help"
+                },
+                "defaultConfiguration": {
+                  "level": "error"
+                },
+                "properties": {
+                  "tags": [
+                    "security"
+                  ],
+                  "security-severity": "8.0"
+                }
+              },
+              {
+                "id": "CODE_EVAL",
+                "shortDescription": {
+                  "text": "CODE_EVAL"
+                },
+                "fullDescription": {
+                  "text": "CODE_EVAL description"
+                },
+                "help": {
+                  "text": "CODE_EVAL help"
+                },
+                "defaultConfiguration": {
+                  "level": "error"
+                },
+                "properties": {
+                  "tags": [
+                    "security"
+                  ],
+                  "security-severity": "8.0"
+                }
+              },
+              {
+                "id": "INSECURE_FETCH",
+                "shortDescription": {
+                  "text": "INSECURE_FETCH"
+                },
+                "fullDescription": {
+                  "text": "INSECURE_FETCH description"
+                },
+                "help": {
+                  "text": "INSECURE_FETCH help"
+                },
+                "defaultConfiguration": {
+                  "level": "warning"
+                },
+                "properties": {
+                  "tags": [
+                    "security"
+                  ],
+                  "security-severity": "5.0"
+                }
+              }
+            ]
+          }
+        },
+        "invocations": [
+          {
+            "executionSuccessful": false,
+            "toolExecutionNotifications": [
+              {
+                "level": "warning",
+                "message": {
+                  "text": "CODE_EVAL is unresolved: agent_investigation_required. Run record before uploading."
+                },
+                "associatedRule": {
+                  "id": "CODE_EVAL"
+                }
+              }
+            ]
+          }
+        ],
+        "columnKind": "utf16CodeUnits",
+        "results": [
+          {
+            "ruleId": "CREDENTIAL_LOG_LEAKAGE",
+            "ruleIndex": 0,
+            "level": "error",
+            "message": {
+              "text": "CREDENTIAL_LOG_LEAKAGE finding"
+            },
+            "locations": [
+              {
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "app/routes/a.ts"
+                  },
+                  "region": {
+                    "startLine": 3
+                  }
+                }
+              }
+            ],
+            "properties": {
+              "source": "deterministic"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "upload": {
+    "id": "ae7fed4e-e1bb-11f1-9ef4-eaf7eabe28e5",
+    "url": "https://api.github.com/repos/isaacroldan/app-security-sarif-scratch/code-scanning/sarifs/ae7fed4e-e1bb-11f1-9ef4-eaf7eabe28e5"
+  },
+  "processing": {
+    "processing_status": "complete",
+    "errors": null,
+    "analyses_url": "https://api.github.com/repos/isaacroldan/app-security-sarif-scratch/code-scanning/analyses?sarif_id=ae7fed4e-e1bb-11f1-9ef4-eaf7eabe28e5"
+  },
+  "analyses": [
+    {
+      "id": 2176534146,
+      "commit": "4fa384c",
+      "category": "",
+      "results_count": 1,
+      "rules_count": 3,
+      "error": "",
+      "warning": "unsuccessful tool execution, exit code 0"
+    },
+    {
+      "id": 2176531953,
+      "commit": "9e09337",
+      "category": "",
+      "results_count": 2,
+      "rules_count": 3,
+      "error": "",
+      "warning": ""
+    },
+    {
+      "id": 2176529141,
+      "commit": "889b449",
+      "category": "",
+      "results_count": 1,
+      "rules_count": 3,
+      "error": "",
+      "warning": ""
+    }
+  ],
+  "alertStates": [
+    {
+      "number": 1,
+      "rule": "CREDENTIAL_LOG_LEAKAGE",
+      "state": "open",
+      "fixed_at": null,
+      "dismissed_reason": null,
+      "dismissed_comment": null,
+      "category": "",
+      "instance_state": "open",
+      "commit": "4fa384c"
+    },
+    {
+      "number": 2,
+      "rule": "CODE_EVAL",
+      "state": "fixed",
+      "fixed_at": "2026-11-16T12:46:03Z",
+      "dismissed_reason": null,
+      "dismissed_comment": null,
+      "category": "",
+      "instance_state": "fixed",
+      "commit": "9e09337"
+    }
+  ]
+}

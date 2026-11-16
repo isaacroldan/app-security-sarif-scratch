@@ -1,0 +1,143 @@
+{
+  "step": "narrowed",
+  "commit": "94ca1516a61d00fa68da51ba594ba5415330cdb5",
+  "sarif": {
+    "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+    "version": "2.1.0",
+    "runs": [
+      {
+        "tool": {
+          "driver": {
+            "name": "Shopify app security check",
+            "semanticVersion": "3.0.0",
+            "rules": [
+              {
+                "id": "INSECURE_FETCH",
+                "shortDescription": {
+                  "text": "INSECURE_FETCH"
+                },
+                "fullDescription": {
+                  "text": "INSECURE_FETCH description"
+                },
+                "help": {
+                  "text": "INSECURE_FETCH help"
+                },
+                "defaultConfiguration": {
+                  "level": "warning"
+                },
+                "properties": {
+                  "tags": [
+                    "security"
+                  ],
+                  "security-severity": "5.0"
+                }
+              }
+            ]
+          }
+        },
+        "automationDetails": {
+          "id": "shopify-app-security/check-id/INSECURE_FETCH/"
+        },
+        "columnKind": "utf16CodeUnits",
+        "results": [
+          {
+            "ruleId": "INSECURE_FETCH",
+            "ruleIndex": 0,
+            "level": "warning",
+            "message": {
+              "text": "INSECURE_FETCH finding"
+            },
+            "locations": [
+              {
+                "physicalLocation": {
+                  "artifactLocation": {
+                    "uri": "app/routes/c.ts"
+                  },
+                  "region": {
+                    "startLine": 2
+                  }
+                }
+              }
+            ],
+            "properties": {
+              "source": "deterministic"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "upload": {
+    "id": "f2fcadcc-e1bb-11f1-922a-ec40594e9a31",
+    "url": "https://api.github.com/repos/isaacroldan/app-security-sarif-scratch/code-scanning/sarifs/f2fcadcc-e1bb-11f1-922a-ec40594e9a31"
+  },
+  "processing": {
+    "processing_status": "complete",
+    "errors": null,
+    "analyses_url": "https://api.github.com/repos/isaacroldan/app-security-sarif-scratch/code-scanning/analyses?sarif_id=f2fcadcc-e1bb-11f1-922a-ec40594e9a31"
+  },
+  "analyses": [
+    {
+      "id": 2176548572,
+      "commit": "94ca151",
+      "category": "shopify-app-security/check-id/INSECURE_FETCH",
+      "results_count": 1,
+      "rules_count": 1,
+      "error": "",
+      "warning": ""
+    },
+    {
+      "id": 2176546267,
+      "commit": "a148192",
+      "category": "",
+      "results_count": 2,
+      "rules_count": 3,
+      "error": "",
+      "warning": ""
+    },
+    {
+      "id": 2176543316,
+      "commit": "67c7cd0",
+      "category": "",
+      "results_count": 1,
+      "rules_count": 3,
+      "error": "",
+      "warning": ""
+    }
+  ],
+  "alertStates": [
+    {
+      "number": 1,
+      "rule": "CREDENTIAL_LOG_LEAKAGE",
+      "state": "open",
+      "fixed_at": null,
+      "dismissed_reason": null,
+      "dismissed_comment": null,
+      "category": "",
+      "instance_state": "open",
+      "commit": "a148192"
+    },
+    {
+      "number": 2,
+      "rule": "CODE_EVAL",
+      "state": "open",
+      "fixed_at": null,
+      "dismissed_reason": null,
+      "dismissed_comment": null,
+      "category": "",
+      "instance_state": "open",
+      "commit": "a148192"
+    },
+    {
+      "number": 3,
+      "rule": "INSECURE_FETCH",
+      "state": "open",
+      "fixed_at": null,
+      "dismissed_reason": null,
+      "dismissed_comment": null,
+      "category": "shopify-app-security/check-id/INSECURE_FETCH",
+      "instance_state": "open",
+      "commit": "94ca151"
+    }
+  ]
+}

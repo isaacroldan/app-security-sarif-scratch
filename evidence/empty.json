@@ -1,0 +1,105 @@
+{
+  "step": "empty",
+  "commit": "6ac905d76738237cf899918163e183e6ec2378a6",
+  "sarif": {
+    "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+    "version": "2.1.0",
+    "runs": [
+      {
+        "tool": {
+          "driver": {
+            "name": "Shopify app security check",
+            "semanticVersion": "3.0.0",
+            "rules": []
+          }
+        },
+        "columnKind": "utf16CodeUnits",
+        "results": []
+      }
+    ]
+  },
+  "upload": {
+    "id": "36dfabf2-e1bc-11f1-8be9-71b0fb7f784a",
+    "url": "https://api.github.com/repos/isaacroldan/app-security-sarif-scratch/code-scanning/sarifs/36dfabf2-e1bc-11f1-8be9-71b0fb7f784a"
+  },
+  "processing": {
+    "processing_status": "complete",
+    "errors": null,
+    "analyses_url": "https://api.github.com/repos/isaacroldan/app-security-sarif-scratch/code-scanning/analyses?sarif_id=36dfabf2-e1bc-11f1-8be9-71b0fb7f784a"
+  },
+  "analyses": [
+    {
+      "id": 2176562834,
+      "commit": "6ac905d",
+      "category": "",
+      "results_count": 0,
+      "rules_count": 0,
+      "error": "",
+      "warning": ""
+    },
+    {
+      "id": 2176558816,
+      "commit": "2f1308f",
+      "category": "",
+      "results_count": 4,
+      "rules_count": 4,
+      "error": "",
+      "warning": ""
+    },
+    {
+      "id": 2176551640,
+      "commit": "e17ed9f",
+      "category": "",
+      "results_count": 3,
+      "rules_count": 3,
+      "error": "",
+      "warning": ""
+    }
+  ],
+  "alertStates": [
+    {
+      "number": 1,
+      "rule": "CREDENTIAL_LOG_LEAKAGE",
+      "state": "fixed",
+      "fixed_at": "2026-11-16T12:49:52Z",
+      "dismissed_reason": null,
+      "dismissed_comment": null,
+      "category": "",
+      "instance_state": "fixed",
+      "commit": "2f1308f"
+    },
+    {
+      "number": 2,
+      "rule": "CODE_EVAL",
+      "state": "fixed",
+      "fixed_at": "2026-11-16T12:49:52Z",
+      "dismissed_reason": null,
+      "dismissed_comment": null,
+      "category": "",
+      "instance_state": "fixed",
+      "commit": "2f1308f"
+    },
+    {
+      "number": 3,
+      "rule": "INSECURE_FETCH",
+      "state": "open",
+      "fixed_at": null,
+      "dismissed_reason": null,
+      "dismissed_comment": null,
+      "category": "shopify-app-security/check-id/INSECURE_FETCH",
+      "instance_state": "open",
+      "commit": "94ca151"
+    },
+    {
+      "number": 4,
+      "rule": "FRESH_RULE",
+      "state": "fixed",
+      "fixed_at": "2026-11-16T12:49:52Z",
+      "dismissed_reason": null,
+      "dismissed_comment": null,
+      "category": "",
+      "instance_state": "fixed",
+      "commit": "2f1308f"
+    }
+  ]
+}

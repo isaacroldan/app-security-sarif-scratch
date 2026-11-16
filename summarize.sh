@@ -1,0 +1,1 @@
+node -e 'const j=JSON.parse(require("fs").readFileSync(0));console.log(JSON.stringify({step:j.step,processing:j.processing.processing_status,errors:j.processing.errors,a:j.analyses[0],s:j.alertStates.map(a=>[a.number,a.rule,a.state,a.instance_state,JSON.stringify(a.category),a.commit,a.dismissed_reason,a.dismissed_comment].join(" "))},null,1))'
